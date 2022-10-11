@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>question2</title>
+	
+<link href="css/edpuzzle.css" rel="stylesheet">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <script>
+	  function wrongAnswer1(){
+      $("#feedback").html("<h2 style='color:red'> That is not the main feature of Edpuzzle </h2>");
+      $("#ed").hide();
+   }
+   function wrongAnswer2(){
+      $("#feedback").html("<h2 style='color:red'> That is not the main feature of Edpuzzle  </h2>");
+      $("#ed").hide();
+   }
+function wrongAnswer3(){
+      $("#feedback").html("<h2 style='color:red'> That is not the main feature of Edpuzzle  </h2>");
+      $("#ed").hide();
+   }
+      function rightAnswer(){
+         $("#feedback").html("<h2 style='color:green'> Correct! The main feature of Edpuzzle is Customizing Video </h2>");
+         $("#ed").show();
+      }
+   </script>
+	
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>	
+<h1>What is the main feature of Edpuzzle?</h1>
+	</header>
+		
+<nav>
+	<ul>
+	<li><a href="index.html">Question 1</a></li>
+	<li><a href="question2.html">Question 2</a></li></ul>
+	</nav>
+		
+		
+<h3>Click on one of the following choices</h3>
+
+<h2 onclick="wrongAnswer1()" class="choices"> Customizing Photo </h2>
+<h2 onclick="wrongAnswer2()" class="choices"> Customizing Text </h2>
+<h2 onclick="rightAnswer()" class="choices"> Customizing Video </h2>
+<h2 onclick="wrongAnswer3()" class="choices"> Customizing Music </h2>
+		
+<br>
+		
+<div id="feedback"></div>
+	<br>
+		
+<img id="ed" src="img/edpuzzle1.png" alt="edpuzzle image" width="318" height="257"/>
+</div>
+
+</body>
+</html>
